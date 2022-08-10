@@ -63,7 +63,7 @@ N.B. Under the Social Trading Bot node in your profile, you must
 	
 ### Github Storage Container
 
-Your signals have to save somewhere, in the setup we are using a dedicated github repo that will host the files, don't worry they are encrypted :)
+In order to be able to send signals, Senders must have a Storage Container. In this current development Superalgos makes use of Github repositories that will host the files, don't worry they are encrypted :)
 
 Under the Github Storage Container
 - Edit codeName to a unique identifier
