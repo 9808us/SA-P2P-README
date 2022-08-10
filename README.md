@@ -2,7 +2,7 @@
 
 
 
-# OUTGOING SINGALS
+OUTGOING SINGALS
 _______________________________________________________________________________________________________________________________
 User profile
 --------------------
@@ -13,23 +13,23 @@ Add User Bots > Social Trading Bots > Social Trading Bot > Available Storage
 Add User Storage > Github Storage > Github Storage Container
 Add P2P Network Nodes > P2P Network Node
 
-	Social Trading Bot
-	--------------------
-	Reference Available Storage Reference to the Github Storage Container of choice
-	Edit/check Trading Strategy Signals
-		Here you setup which signals you want to send, some more details are found under the section "Trading System"
+Social Trading Bot
+--------------------
+Reference Available Storage Reference to the Github Storage Container of choice
+Edit/check Trading Strategy Signals
+Here you setup which signals you want to send, some more details are found under the section "Trading System"
 
 	
-	Github Storage Container
-	--------------------	
-	Edit codeName to a unique identifier
-	Edit githubUserName to your github user account
-	Edit repositoryName to your github repository where you'll save the trading signals
+Github Storage Container
+--------------------	
+Edit codeName to a unique identifier
+Edit githubUserName to your github user account
+Edit repositoryName to your github repository where you'll save the trading signals
 
-	Under Superalgos/My-Secrets create a file called "ApisSecrets.json", enter the following details in the following format.
+Under Superalgos/My-Secrets create a file called "ApisSecrets.json", enter the following details in the following format.
 
-	{
-		"secrets": [
+{
+	"secrets": [
 		{
 			"nodeCodeName": "codeName-that-you-have-chosen-in-github-storage-container",
 			"apiToken": "your-api-token-from-github"
@@ -42,33 +42,33 @@ Add P2P Network Nodes > P2P Network Node
 	}
 	
 
-	P2P Network Node
+P2P Network Node
 	--------------------
 	Add Network Services > Trading Signals
 	Reference P2P Network Reference to the network of choice (mainnet or testnet for public signals or create your own permissioned P2P network)
 
-	NOTE: Using Tesnet will at the moment result in interference with the Machine Learning Project, as they are using Testnet. Should not happen, but seems to be a bug there.
+NOTE: Using Tesnet will at the moment result in interference with the Machine Learning Project, as they are using Testnet. Should not happen, but seems to be a bug there.
 	
-	NOTE: There need to be network nodes running for the choosen network, if permissioned p2p you need to run your own node. 
+NOTE: There need to be network nodes running for the choosen network, if permissioned p2p you need to run your own node. 
 
-	NOTE:
-	Whatever network you choose to send signals over, the Environment.js file under /Superalgos, has to be change to the same network type and network codename. 
-	The following was used for Permissioned P2P Network.
-	DESKTOP_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
-	DESKTOP_TARGET_NETWORK_CODENAME: 'BlaaSignals',
-	TASK_SERVER_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
-	TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
+NOTE: 	Whatever network you choose to send signals over, the Environment.js file under /Superalgos, has to be change to the same network type and network codename. 
+	
+The following was used for Permissioned P2P Network.
+DESKTOP_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
+DESKTOP_TARGET_NETWORK_CODENAME: 'BlaaSignals',
+TASK_SERVER_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
+TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
 	
 	
 
-	Signing Account 
-	--------------------
-	Reference your User Profile to the profile constructor
-	Profile contructor > Installing signing account
+# Signing Account 
+--------------------
+Reference your User Profile to the profile constructor
+Profile contructor > Installing signing account
 
 
 
-####	PR your updated profile
+###	PR your updated profile
 
 	
 
@@ -105,14 +105,14 @@ User profile
 Add User Apps > Server Apps > Task Server
 Add User Bots > Social Trading Bots > Social Trading Bot > Available Signals > Incoming Signals
 
-	Incoming Signals
+Incoming Signals
 	--------------------
 	Here you add what signals you want to use in your trading system. 
 	You reference them from the user profile that is sending the signals (under available signals > trading system signals > trading strategy signals)
 	Note: You have to add the trading system signal, otherwise the candles won't sync. 
 
 
-	Signing Account 
+Signing Account 
 	--------------------
 	Reference your User Profile to the profile constructor
 	Profile contructor > Installing signing account
