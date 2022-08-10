@@ -5,24 +5,38 @@ PREFACE/INTRODUCTION TO BE WRITTEN
 ![image](https://user-images.githubusercontent.com/38046064/183960313-a0bef31a-1779-41be-b55f-cb8e303e70ae.png)
 
 
-TABLE OF CONTEXT
+Table of Content:
 
-- [Set up your User Profile](#set-up-your-user-profile)
-- [Set up a Workspace for SENDING Signals](#outgoing-signals)
-- [Set up a Workspace for RECEIVING Signals](#incoming-signals)
-- [Notes](#note)
+- Geting Ready
+- Set up your [User Profile](#set-up-your-user-profile)
+- Set up Superalgos [P2P Environment](#note)
+- Set up a Workspace for [SENDING](#outgoing-signals) Signals
+- Set up a Workspace for [RECEIVING](#incoming-signals) Signals
+
 
 ---
 
-# SET UP YOUR USER PROFILE
+## GETTING READY
 
-# OUTGOING SIGNALS
+This Readme covers the set up of Superalgos in order to be able to send or receive *signals* from the Superalgos P2P Network.
 
-To be able to send signals using the built in features of Superalgos, you must first prepare your User Profile with specific nodes. You will also need a dedicated Github Repo as well as trading system and workspace. 
+It's supposed that you're familiar with Superalgos. But if you don't feel ready about it, follow the instructions in the main README file for developers and contributors. 
 
-### User profile
+You can get help from videos about installation https://youtu.be/Q4HVdfNdHbk or how to make a User Profile https://youtu.be/Sa5B-bwg81A.
+
+Whether you want to be a *Sender* or a *Receiver* there are few concepts to keep in mind:
+
+- The **User Profile** that becames essential to be able to identify users in the P2P network (i.e. A Sender can decide to send signals only to specific users. And a Receiver can be sure that signals are sent from a specific user and nobody else)
+
+- The **P2P Network** that is necessary for the Senders but NOT for Receivers!
+
+
+
+
+## SET UP YOUR USER PROFILE
 
 Add the following to your user profile, you might have to add the Network project and it's plugins to the workspace you are using.
+
 
 ### Add...
 
@@ -67,6 +81,29 @@ You must also add a JSON-file to your Superalgos folder, under Superalgos/My-Sec
 }
 ```	
 
+
+### Signing Account 
+
+After you are done with your changes to your user profile, you must sign them. This is to ensure that you are you and noone else. This is done with the Profile Constructor (poart of the Governance project). 
+
+- Reference your User Profile to the profile constructor
+- Profile contructor > Installing signing account
+- User Profile > Save Plugin
+- **PR your updated profile**
+
+
+
+## SUPERALGOS P2P ENVIRONMENT
+
+Whatever network the signals are being sent over, the Environment.js file under /Superalgos, has to be change to the same network type and network codename. 
+The following was used for Permissioned P2P Network.
+
+```
+DESKTOP_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
+DESKTOP_TARGET_NETWORK_CODENAME: 'BlaaSignals',
+TASK_SERVER_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
+TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
+```
 ### P2P Network Node
 
 It is good pratice *(and maybe required? unsure...)* to run a network node. 
@@ -92,20 +129,22 @@ TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
 **NOTE:** There needs to be network nodes running for the choosen network, if permissioned p2p you need to run your own node. 
 	
 
-### Signing Account 
 
-After you are done with your changes to your user profile, you must sign them. This is to ensure that you are you and noone else. This is done with the Profile Constructor (poart of the Governance project). 
-
-- Reference your User Profile to the profile constructor
-- Profile contructor > Installing signing account
-- User Profile > Save Plugin
-- **PR your updated profile**
 
 	
 
+
+## OUTGOING SIGNALS
+
+To be able to send signals using the built in features of Superalgos, you must first prepare your User Profile with specific nodes. You will also need a dedicated Github Repo as well as trading system and workspace. 
+
+
+
+
+
 ### Trading System
 
-Nest up is to setup the trading system! 
+Next step is to setup the trading system! 
 
 - Reference Trading System Outgoing Signal Reference to Trading System Signal (Under Socical Trading Bot > Available Signals)
 - Add outgoing signals for choice, you can add as many or as few that you wish
@@ -136,6 +175,8 @@ Almost there, you need to add a couple of nodes before you run your trading task
 ---
 
 # INCOMING SINGALS 
+
+Set up a Workspace for REIVING signals from a Superalgos User.
 ## User profile
 - Add User Apps > Server Apps > Task Server
 - Add User Bots > Social Trading Bots > Social Trading Bot > Available Signals > Incoming Signals
@@ -161,16 +202,3 @@ Add Task Server Reference on Task
 Reference Task Server Reference to the correct Task Server in the User Profile
 Add Social Trading Bot Reference to Trading Bot Instance
 Reference Social Trading Bot Reference to the correct Social Trading Bot in User Profile
-
-
-## NOTE:
-
-Whatever network the signals are being sent over, the Environment.js file under /Superalgos, has to be change to the same network type and network codename. 
-The following was used for Permissioned P2P Network.
-
-```
-DESKTOP_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
-DESKTOP_TARGET_NETWORK_CODENAME: 'BlaaSignals',
-TASK_SERVER_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
-TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
-```
