@@ -37,6 +37,8 @@ Whether you want to be a *Sender* or a *Receiver* there are few concepts to keep
 
 Add the following to your user profile, you might have to add the Network project and it's plugins to the workspace you are using.
 
+![image](https://user-images.githubusercontent.com/38046064/183973288-81b2ccd3-f36e-41b2-92e3-6a0f3c683d9e.png)
+
 
 ### Add...
 
