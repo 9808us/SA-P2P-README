@@ -35,26 +35,31 @@ Whether you want to be a *Sender* or a *Receiver* there are few concepts to keep
 
 ## SET UP YOUR USER PROFILE
 
-Add the following to your user profile, you might have to add the Network project and it's plugins to the workspace you are using.
-
 ![image](https://user-images.githubusercontent.com/38046064/183973288-81b2ccd3-f36e-41b2-92e3-6a0f3c683d9e.png)
 
 
-### Add...
+The User Profile setup of a Sender is only Slightly different from a Receiver. 
+
+### FOR RECEIVERS
+
+Set up your User Profile adding these nodes:
 
 - User Apps > Server Apps > Task Server
-- User Apps > Server Apps > Social Trading Server *(Unsure if needed....)*
+- User Apps > Server Apps > Social Trading Server
+- User Bots > Social Trading Bots > Social Trading Bot > Available Signals
+- P2P Network Nodes > P2P Network Node
+
+#### FOR SENDERS 
+
+All the above plus:
+
 - User Bots > Social Trading Bots > Social Trading Bot > Available Signals > Trading System Signals > Trading Strategy Signals
 - User Bots > Social Trading Bots > Social Trading Bot > Available Storage
 - User Storage > Github Storage > Github Storage Container
-- P2P Network Nodes > P2P Network Node
 
-### Social Trading Bot
-
-Under the Social Trading Bot node in your profile you must
+N.B. Under the Social Trading Bot node in your profile, you must
 - Reference Available Storage Reference to the Github Storage Container of choice
-- Edit/check Trading Strategy Signals
-	- Here you setup which signals you want to send, some more details are found under the section "Trading System"
+- Edit/check Trading Strategy Signals. Here you setup which signals you want to send. More details are found under the section "Trading System"
 
 	
 ### Github Storage Container
