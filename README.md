@@ -2,9 +2,18 @@
 
 PREFACE/INTRODUCTION TO BE WRITTEN
 
+
+
 TABLE OF CONTEXT
 
+- [Set up your User Profile](#set-up-your-user-profile)
+- [Set up a Workspace for SENDING Signals](#outgoing-signals)
+- [Set up a Workspace for RECEIVING Signals](#incoming-signals)
+- [Notes](#note)
+
 ---
+
+# SET UP YOUR USER PROFILE
 
 # OUTGOING SIGNALS
 
