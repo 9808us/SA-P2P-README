@@ -1,13 +1,12 @@
 # SUPERALGOS OUTGOING AND INCOMING SIGNALS
 
-PREFACE/INTRODUCTION TO BE WRITTEN
 
 ![image](https://user-images.githubusercontent.com/38046064/183960313-a0bef31a-1779-41be-b55f-cb8e303e70ae.png)
 
 
 Table of Content:
 
-- Geting Ready
+- Getting Ready
 - Set up your [User Profile](#set-up-your-user-profile)
 - Set up Superalgos [P2P Environment](#note)
 - Set up a Workspace for [SENDING](#outgoing-signals) Signals
