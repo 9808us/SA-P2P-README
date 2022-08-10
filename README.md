@@ -2,6 +2,7 @@
 
 PREFACE/INTRODUCTION TO BE WRITTEN
 
+![image](https://user-images.githubusercontent.com/38046064/183960313-a0bef31a-1779-41be-b55f-cb8e303e70ae.png)
 
 
 TABLE OF CONTEXT
