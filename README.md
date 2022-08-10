@@ -38,7 +38,7 @@ Whether you want to be a *Sender* or a *Receiver* there are few concepts to keep
 ![image](https://user-images.githubusercontent.com/38046064/183973288-81b2ccd3-f36e-41b2-92e3-6a0f3c683d9e.png)
 
 
-The User Profile setup of a Sender is only Slightly different from a Receiver. 
+The User Profile setup of a Sender is only slightly different from a Receiver. 
 
 ### FOR RECEIVERS
 
