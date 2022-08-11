@@ -65,7 +65,7 @@ All the above plus:
 
 N.B. Under the Social Trading Bot node in your profile, you must
 - Reference Available Storage Reference to the Github Storage Container of choice
-- Edit/check Trading Strategy Signals. Here you setup which signals you want to send. More details are found under the section "Trading System"
+- Edit/check Trading Strategy Signals. Here you setup which signals you want to send. More details are found under the section "[OUTGOING SIGNALS](#outgoing-signals)"
 
 
 ### Github Storage Container
@@ -79,7 +79,7 @@ Under the Github Storage Container
 
 You must also add a JSON-file to your Superalgos folder, under Superalgos/My-Secrets create a file called "ApisSecrets.json", enter the following details in the following format.
 
-```
+```js
 {
 	"secrets": [
 		{
@@ -98,12 +98,14 @@ You must also add a JSON-file to your Superalgos folder, under Superalgos/My-Sec
 
 ### Signing Account 
 
-After you are done with your changes to your user profile, you must sign them. This is to ensure that you are you and noone else. This is done with the Profile Constructor (poart of the Governance project). 
+After you are done with your changes to your user profile, you must sign them. This is to ensure that you are you and noone else. This is done with the Profile Constructor (part of the Governance project). 
 
 - Reference your User Profile to the profile constructor
 - Profile contructor > Installing signing account
 - User Profile > Save Plugin
 - **PR your updated profile**
+
+![image](https://user-images.githubusercontent.com/93773753/184140606-b94435cd-96ec-4ab5-8d22-ed989cab85ef.png)
 
 Remember to save your User Profile plugin, contribute it and check that it was merged at the Governance repository.
 
@@ -113,11 +115,11 @@ Remember to save your User Profile plugin, contribute it and check that it was m
 
 ## SUPERALGOS P2P ENVIRONMENT
 
-Whatever network you choose to send signals over, the Environment.js file (located in under Superalgos folder), has to be changed to the same network type and network codename you want to use.
+Whatever network you choose to send signals over, some lines in the Environment.js file (located in under Superalgos folder), has to be changed to the same network type and network codename you want to use. 
 
 The following was used for Permissioned P2P Network.
 
-```
+```js
 DESKTOP_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
 DESKTOP_TARGET_NETWORK_CODENAME: 'BlaaSignals',
 TASK_SERVER_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
@@ -153,9 +155,12 @@ Next step is to setup the trading system!
 - Reference all outgoing signals to the correct Signal under Trading Strategy Signals.
 	- For instance, a Market Buy Signal in the trading system goes to the Market Buy Signal under Trading Strategy Signals. 
 
+![image](https://user-images.githubusercontent.com/93773753/184138630-d169a22a-102d-40fb-ba62-81f2691f0a17.png)
+
+
 Signals cannot be used as a conditions on it's own, to use signals as a true/false statement, enter the following as a conditions to the event: 
 
-```
+```js
 if (signals !== undefined && signals.length > 0) {
     true
 } else {
@@ -168,16 +173,24 @@ if (signals !== undefined && signals.length > 0) {
 Almost there, you need to add a couple of nodes before you run your trading task (either Testing Trading Tasks or Production Trading Tasks).
 
 - Add Task Server Reference on Task
-- Reference Task Server Reference to the a free Task Server in the User Profile 
+	- Reference Task Server Reference to the a free Task Server in the User Profile 
 - Add Social Trading Bot Reference to Trading Bot Instance
-- Reference Social Trading Bot Reference to the correct Social Trading Bot in User Profile (the one that will send your signals)
+	- Reference Social Trading Bot Reference to the correct Social Trading Bot in User Profile (the one that will send your signals)
 
+To run a node simply run the following command, which will run your default network node (default is set to number one), 
+```js
+node network
+```
+If you wish to run any other you can use the following command, and changing the number to the corresponding node number from your user profile.
+```js
+node network-node-2
+```
 
 ---
 
 # INCOMING SINGALS 
 
-Set up a Workspace for REIVING signals from a Superalgos User.
+Set up a Workspace for *receiving* signals from a Superalgos User.
 ## User profile
 - Add User Apps > Server Apps > Task Server
 - Add User Bots > Social Trading Bots > Social Trading Bot > Available Signals > Incoming Signals
@@ -186,15 +199,21 @@ Set up a Workspace for REIVING signals from a Superalgos User.
 
 Here you add what signals you want to use in your trading system. 
 You reference them from the user profile that is sending the signals (under available signals > trading system signals > trading strategy signals)
-Note: You have to add the trading system signal, otherwise the candles won't sync. 
 
+![image](https://user-images.githubusercontent.com/93773753/184138327-1a3fa950-51d6-41ee-bc43-c2c72c75ecb9.png)
+
+
+**Note**: You have to add the trading system signal, otherwise the candles won't sync. 
+![image](https://user-images.githubusercontent.com/93773753/184138062-cb032cf4-f01b-4602-9c63-e81a0e7daec4.png)
 
 ## Signing Account
 
-Reference your User Profile to the profile constructor
-Profile contructor > Installing signing account
+- Reference your User Profile to the profile constructor
+- Profile contructor > Installing signing account
+- User Profile > Save Plugin
+- **PR your updated profile**
 
--PR your updated profile
+Remember to save your User Profile plugin, contribute it and check that it was merged at the Governance repository.
 
 
 ## P2P Network Node (Either Testing Trading Tasks or Production Trading Tasks)
