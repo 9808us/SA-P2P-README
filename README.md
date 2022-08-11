@@ -1,7 +1,7 @@
 # SUPERALGOS OUTGOING AND INCOMING SIGNALS
 
 
-![image](https://user-images.githubusercontent.com/38046064/183960313-a0bef31a-1779-41be-b55f-cb8e303e70ae.png)
+![image](https://user-images.githubusercontent.com/38046064/184115279-3fe40334-0567-4d21-b124-8b7488894d32.png)
 
 
 Table of Content:
