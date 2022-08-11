@@ -49,11 +49,6 @@ Set up your User Profile adding these nodes:
 - User Bots > Social Trading Bots > Social Trading Bot > Available Signals
 - P2P Network Nodes > P2P Network Node
 
-If you just want to receive signals, then you do not need to run any servers. But in order to be able to connect to the signals provider (i.e. a Superalgos User) the following nodes must be added to your User Profile: 
-
-Under the P2P Network Node in your user profile 
-- Add Network Services > Trading Signals
-- Reference P2P Network Reference to the network of choice (mainnet or testnet for public signals or create your own permissioned P2P network)
 
 #### FOR SENDERS 
 
@@ -63,7 +58,11 @@ All the above plus:
 - User Bots > Social Trading Bots > Social Trading Bot > Available Storage
 - User Storage > Github Storage > Github Storage Container
 
-N.B. Under the Social Trading Bot node in your profile, you must
+Under the P2P Network Node in your user profile:
+- Add Network Services > Trading Signals
+- Reference P2P Network Reference to the network of choice (mainnet or testnet for public signals or your own permissioned P2P network)
+
+N.B. Under the Social Trading Bot node in your profile, you must:
 - Reference Available Storage Reference to the Github Storage Container of choice
 - Edit/check Trading Strategy Signals. Here you setup which signals you want to send. More details are found under the section "[OUTGOING SIGNALS](#outgoing-signals)"
 
@@ -72,7 +71,7 @@ N.B. Under the Social Trading Bot node in your profile, you must
 
 In order to be able to send signals, *Senders* must have a Storage Container. In this current development Superalgos makes use of Github repositories that will host the files, don't worry they are encrypted :)
 
-Under the Github Storage Container
+Under the Github Storage Container:
 - Edit codeName to a unique identifier
 - Edit githubUserName to your github user account
 - Edit repositoryName to your github repository where you'll save the trading signals
