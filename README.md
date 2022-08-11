@@ -139,7 +139,7 @@ TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
 ---
 ## OUTGOING SIGNALS
 
-To be able to send signals using the built in features of Superalgos, you must add your User Profile with specific nodes to the Workspace whit the Trading System you want to use. At minimal your workspace should looks like the screenshot below with your User Profiles.
+To be able to send signals using the built in features of Superalgos, you must add your User Profile with specific nodes to the Workspace with the Trading System you want to use. At minimal your workspace should looks like the screenshot below with your User Profiles.
 
 ![image](https://user-images.githubusercontent.com/38046064/184152474-3231b3e1-1cc8-4bc6-bdca-354ae594ff9f.png)
 
