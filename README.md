@@ -11,7 +11,7 @@ Table of Content:
 - Set up Superalgos [P2P Environment](#note)
 - Set up a Workspace for [SENDING](#outgoing-signals) Signals
 - Set up a Workspace for [RECEIVING](#incoming-signals) Signals
-
+- [Troubleshoots](#troubleshooting-errors)
 
 ---
 
@@ -201,3 +201,15 @@ Add Task Server Reference on Task
 Reference Task Server Reference to the correct Task Server in the User Profile
 Add Social Trading Bot Reference to Trading Bot Instance
 Reference Social Trading Bot Reference to the correct Social Trading Bot in User Profile
+
+
+
+
+---
+
+# TROUBLESHOOTING ERRORS
+
+### Network Client Identity
+
+"Fatal Error. Can not run this task. The Network Client Identity does not match any node at User Profiles Plugins."
+This error occurs when the signing account does not match the Governance plugin repository's account. To ensure they are the same, import your user profile on the workspace using the "Add specified User Profile" command under Plugins -> Plugin Project -> Plugin User Profiles. Add the correct nodes, references and signing account to the plugin as detailed in App Setup. Save the plugin and push the changes to the Governance repository and wait 10 minutes for it to merge and be picked up by the Forecast Server.
