@@ -27,8 +27,9 @@ Whether you want to be a *Sender* or a *Receiver* there are few concepts to keep
 
 - The **User Profile** that becames essential to be able to identify users in the P2P network (i.e. A Sender can decide to send signals only to specific users. And a Receiver can be sure that signals are sent from a specific user and nobody else)
 
-- The **P2P Network** that is necessary for the *Senders* but NOT for *Receivers*!
+- The **P2P Network** that is necessary for both *Senders* and *Receivers*
 
+- A running *SERVER* that is mandatory for *Senders* but NOT for *Receivers*!
 
 
 
