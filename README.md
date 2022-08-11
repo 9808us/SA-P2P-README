@@ -92,7 +92,8 @@ You must also add a JSON-file to your Superalgos folder, under Superalgos/My-Sec
 		}
 		]
 }
-```	
+```
+
 
 
 ### Signing Account 
