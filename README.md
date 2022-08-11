@@ -103,11 +103,15 @@ After you are done with your changes to your user profile, you must sign them. T
 - User Profile > Save Plugin
 - **PR your updated profile**
 
+Remember to save your User Profile plugin, contribute it and check that it was merged at the Governance repository.
+
+**IMPORTANT**: It takes a few minutes for your profile to be auto-merged into the Governance repository and another 5 minutes to be picked up by the running Network Node. After changes to your profile, wait for around 10 minutes before expecting it to be able to connect to the Superalgos Network node.
+
 
 
 ## SUPERALGOS P2P ENVIRONMENT
 
-Whatever network the signals are being sent over, the Environment.js file under /Superalgos, has to be change to the same network type and network codename. 
+Whatever network you choose to send signals over, the Environment.js file (located in under Superalgos folder), has to be changed to the same network type and network codename you want to use.
 
 The following was used for Permissioned P2P Network.
 
@@ -121,7 +125,6 @@ TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
 
 **Using Tesnet will at the moment result in interference with the Machine Learning Project, as they are using Testnet. Should not happen, but seems to be a bug there.**
 
-Whatever network you choose to send signals over, the Environment.js file under /Superalgos, has to be change to the same network type and network codename (don't forget to restart Superalgos). 
 
 	
 **NOTE:** There needs to be network nodes running for the choosen network, if permissioned p2p you need to run your own node. 
