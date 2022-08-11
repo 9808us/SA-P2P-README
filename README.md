@@ -126,7 +126,7 @@ TASK_SERVER_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
 TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
 ```
 
-In this case the user Blaa (as a *sender*) must config his network with these lines of code, while a *receiver* would anyway modify the code in the same way in order to be able to conect to Blaa's Permissioned P2P Network.
+In this case the user Blaa (as a *sender*) must config his network with these lines of code, while a *receiver* would anyway modify the code in the same way in order to be able to connect to Blaa's Permissioned P2P Network.
 
 
 **Using Tesnet will at the moment result in interference with the Machine Learning Project, as they are using Testnet. Should not happen, but seems to be a bug there.**
