@@ -40,7 +40,7 @@ Whether you want to be a *Sender* or a *Receiver* there are few concepts to keep
 
 The User Profile setup of a Sender is only slightly different from a Receiver. 
 
-### FOR RECEIVERS
+#### FOR RECEIVERS
 
 Set up your User Profile adding these nodes:
 
