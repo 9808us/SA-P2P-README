@@ -115,9 +115,9 @@ Remember to save your User Profile plugin, contribute it and check that it was m
 
 ## SUPERALGOS P2P ENVIRONMENT
 
-Whatever network you choose to send signals over, some lines in the Environment.js file (located in under Superalgos folder), has to be changed to the same network type and network codename you want to use. 
+Whatever network you choose to send signals over, or even if you just want to receive signals, you have to make sure that in the Environment.js files the P2P Network that will be used must be in sync with the User Profile P2P Network config.
 
-The following was used for Permissioned P2P Network.
+For example the following was used for Permissioned P2P Network hosted by the user Blaa:
 
 ```js
 DESKTOP_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
@@ -125,6 +125,8 @@ DESKTOP_TARGET_NETWORK_CODENAME: 'BlaaSignals',
 TASK_SERVER_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
 TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
 ```
+
+In this case the user Blaa (as a *sender*) must config his network with these lines of code, while a *receiver* would anyway modify the code in the same way in order to be able to conect to Blaa's Permissioned P2P Network.
 
 
 **Using Tesnet will at the moment result in interference with the Machine Learning Project, as they are using Testnet. Should not happen, but seems to be a bug there.**
