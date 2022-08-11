@@ -47,7 +47,7 @@ Set up your User Profile adding these nodes:
 - User Apps > Server Apps > Task Server
 - User Apps > Server Apps > Social Trading Server
 - User Bots > Social Trading Bots > Social Trading Bot > Available Signals
-- P2P Network Nodes > P2P Network Node
+
 
 
 #### FOR SENDERS 
