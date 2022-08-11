@@ -27,7 +27,7 @@ Whether you want to be a *Sender* or a *Receiver* there are few concepts to keep
 
 - The **User Profile** that becames essential to be able to identify users in the P2P network (i.e. A Sender can decide to send signals only to specific users. And a Receiver can be sure that signals are sent from a specific user and nobody else)
 
-- The **P2P Network** that is necessary for the Senders but NOT for Receivers!
+- The **P2P Network** that is necessary for the *Senders* but NOT for *Receivers*!
 
 
 
@@ -48,6 +48,12 @@ Set up your User Profile adding these nodes:
 - User Bots > Social Trading Bots > Social Trading Bot > Available Signals
 - P2P Network Nodes > P2P Network Node
 
+If you just want to receive signals, then you do not need to run any servers. But in order to be able to connect to the signals provider (i.e. a Superalgos User) the following nodes must be added to your User Profile: 
+
+Under the P2P Network Node in your user profile 
+- Add Network Services > Trading Signals
+- Reference P2P Network Reference to the network of choice (mainnet or testnet for public signals or create your own permissioned P2P network)
+
 #### FOR SENDERS 
 
 All the above plus:
@@ -60,10 +66,10 @@ N.B. Under the Social Trading Bot node in your profile, you must
 - Reference Available Storage Reference to the Github Storage Container of choice
 - Edit/check Trading Strategy Signals. Here you setup which signals you want to send. More details are found under the section "Trading System"
 
-	
+
 ### Github Storage Container
 
-In order to be able to send signals, Senders must have a Storage Container. In this current development Superalgos makes use of Github repositories that will host the files, don't worry they are encrypted :)
+In order to be able to send signals, *Senders* must have a Storage Container. In this current development Superalgos makes use of Github repositories that will host the files, don't worry they are encrypted :)
 
 Under the Github Storage Container
 - Edit codeName to a unique identifier
@@ -102,6 +108,7 @@ After you are done with your changes to your user profile, you must sign them. T
 ## SUPERALGOS P2P ENVIRONMENT
 
 Whatever network the signals are being sent over, the Environment.js file under /Superalgos, has to be change to the same network type and network codename. 
+
 The following was used for Permissioned P2P Network.
 
 ```
@@ -110,36 +117,19 @@ DESKTOP_TARGET_NETWORK_CODENAME: 'BlaaSignals',
 TASK_SERVER_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
 TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
 ```
-### P2P Network Node
 
-It is good pratice *(and maybe required? unsure...)* to run a network node. 
-
-Under the P2P Network Node in your user profile 
-- Add Network Services > Trading Signals
-- Reference P2P Network Reference to the network of choice (mainnet or testnet for public signals or create your own permissioned P2P network)
 
 **Using Tesnet will at the moment result in interference with the Machine Learning Project, as they are using Testnet. Should not happen, but seems to be a bug there.**
 
 Whatever network you choose to send signals over, the Environment.js file under /Superalgos, has to be change to the same network type and network codename (don't forget to restart Superalgos). 
 
-The following was used for Permissioned P2P Network.
-```
-...
-DESKTOP_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
-DESKTOP_TARGET_NETWORK_CODENAME: 'BlaaSignals',
-TASK_SERVER_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
-TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
-...
-```
 	
 **NOTE:** There needs to be network nodes running for the choosen network, if permissioned p2p you need to run your own node. 
-	
 
 
 
 	
-
-
+---
 ## OUTGOING SIGNALS
 
 To be able to send signals using the built in features of Superalgos, you must first prepare your User Profile with specific nodes. You will also need a dedicated Github Repo as well as trading system and workspace. 
