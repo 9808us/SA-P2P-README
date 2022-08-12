@@ -134,7 +134,14 @@ In this case the user Blaa (as a *sender*) must config his network with these li
 	
 **NOTE:** There needs to be network nodes running for the choosen network, if permissioned p2p you need to run your own node. 
 
-
+To run a node simply run the following command, which will run your default network node (default is set to number one), 
+```js
+node network
+```
+If you wish to run any other you can use the following command, and changing the number to the corresponding node number from your user profile.
+```js
+node network-node-2
+```
 
 	
 ---
@@ -172,7 +179,7 @@ if (signals !== undefined && signals.length > 0) {
 }
 ```
 
-### P2P Network Node
+### Trading Task Node
 
 Almost there, you need to add a couple of nodes before you run your trading task (either Testing Trading Tasks or Production Trading Tasks).
 
@@ -181,14 +188,7 @@ Almost there, you need to add a couple of nodes before you run your trading task
 - Add Social Trading Bot Reference to Trading Bot Instance
 	- Reference Social Trading Bot Reference to the correct Social Trading Bot in User Profile (the one that will send your signals)
 
-To run a node simply run the following command, which will run your default network node (default is set to number one), 
-```js
-node network
-```
-If you wish to run any other you can use the following command, and changing the number to the corresponding node number from your user profile.
-```js
-node network-node-2
-```
+![image](https://user-images.githubusercontent.com/93773753/184290130-ecdd07a8-d894-46ee-9252-56a8b05b99a2.png)
 
 ---
 
@@ -220,15 +220,15 @@ You reference them from the user profile that is sending the signals (under avai
 Remember to save your User Profile plugin, contribute it and check that it was merged at the Governance repository.
 
 
-## P2P Network Node (Either Testing Trading Tasks or Production Trading Tasks)
+## Trading Task Node 
+To receive trading signals into the trading task you need to add a couple of nodes before you run your trading task (either Testing Trading Tasks or Production Trading Tasks).
 
-Add Task Server Reference on Task
-Reference Task Server Reference to the correct Task Server in the User Profile
-Add Social Trading Bot Reference to Trading Bot Instance
-Reference Social Trading Bot Reference to the correct Social Trading Bot in User Profile
+- Add Task Server Reference on Task
+	- Reference Task Server Reference to the a free Task Server in the User Profile 
+- Add Social Trading Bot Reference to Trading Bot Instance
+	- Reference Social Trading Bot Reference to the correct Social Trading Bot in User Profile (the one that will send your signals)
 
-
-
+![image](https://user-images.githubusercontent.com/93773753/184290323-d6908658-c318-4e29-b692-f4a08b7078fb.png)
 
 ---
 
