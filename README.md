@@ -39,7 +39,7 @@ Whether you want to be a *Sender* or a *Receiver* there are few concepts to keep
 ![image](https://user-images.githubusercontent.com/38046064/183973288-81b2ccd3-f36e-41b2-92e3-6a0f3c683d9e.png)
 
 
-The User Profile setup of a Sender is only slightly different from a Receiver. 
+The User Profile setup of *Senders* is only slightly different from a Receiver. 
 
 #### FOR RECEIVERS
 
@@ -246,6 +246,8 @@ This error occurs when the signing account does not match the Governance plugin 
 Here's an example workspace for receiving signal that you to try.
 - Before being able to access the signals being sent you need to send a DM to [BlaaSwe](https://github.com/BlaaSwe) on Telegram so that he can add you to the Permissioned P2P Network. 
 - Edit your environment.js file to replace 'P2P Network' and 'Testnet' with the following settings instead
+
+
 ```js
 DESKTOP_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
 DESKTOP_TARGET_NETWORK_CODENAME: 'BlaaSignals',
@@ -255,6 +257,7 @@ TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
 - Start/Restart Superalgos
 - Update Superalgos
 - Run the trading task
+
 
 **NOTE**: It is only possible to run live trading (paper or real) with the current setup, signal sending might be down at certain times for troubleshoot or interference. 
 
