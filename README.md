@@ -149,10 +149,7 @@ node network-node-2
 
 To be able to send signals using the built in features of Superalgos, you must add your User Profile with specific nodes to the Workspace with the Trading System you want to use. At minimal your workspace should looks like the screenshot below with your User Profiles.
 
-![image](https://user-images.githubusercontent.com/38046064/184152474-3231b3e1-1cc8-4bc6-bdca-354ae594ff9f.png)
-
-
-
+![image](https://user-images.githubusercontent.com/93773753/184310271-fd0d171f-a414-4518-af35-2bd806546cd6.png)
 
 
 
@@ -193,8 +190,13 @@ Almost there, you need to add a couple of nodes before you run your trading task
 ---
 
 # INCOMING SINGALS 
-
 Set up a Workspace for *receiving* signals from a Superalgos User.
+
+To be able to receive signals using the built in features of Superalgos, you must add the User Profile which sends the signgals to a Workspace with the Trading System you want to use. At minimal your workspace should looks like the screenshot below with your User Profiles.
+
+![image](https://user-images.githubusercontent.com/38046064/184152474-3231b3e1-1cc8-4bc6-bdca-354ae594ff9f.png)
+
+
 ## User profile
 - Add User Apps > Server Apps > Task Server
 - Add User Bots > Social Trading Bots > Social Trading Bot > Available Signals > Incoming Signals
