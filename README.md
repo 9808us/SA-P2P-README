@@ -167,16 +167,6 @@ Next step is to setup the trading system!
 ![image](https://user-images.githubusercontent.com/93773753/184138630-d169a22a-102d-40fb-ba62-81f2691f0a17.png)
 
 
-Signals cannot be used as a conditions on it's own, to use signals as a true/false statement, enter the following as a conditions to the event: 
-
-```js
-if (signals !== undefined && signals.length > 0) {
-    true
-} else {
-    false
-}
-```
-
 ### Trading Task Node
 
 Almost there, you need to add a couple of nodes before you run your trading task (either Testing Trading Tasks or Production Trading Tasks).
@@ -209,6 +199,15 @@ You reference them from the user profile that is sending the signals (under avai
 
 ![image](https://user-images.githubusercontent.com/93773753/184138327-1a3fa950-51d6-41ee-bc43-c2c72c75ecb9.png)
 
+Signals cannot be used as a conditions on it's own, to use signals as a true/false statement, enter the following as a conditions to the event: 
+
+```js
+if (signals !== undefined && signals.length > 0) {
+    true
+} else {
+    false
+}
+```
 
 **Note**: You have to add the trading system signal, otherwise the candles won't sync. 
 ![image](https://user-images.githubusercontent.com/93773753/184138062-cb032cf4-f01b-4602-9c63-e81a0e7daec4.png)
