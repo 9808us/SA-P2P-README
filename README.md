@@ -12,7 +12,6 @@ Table of Content:
 - Set up a Workspace for [SENDING](#outgoing-signals) Signals
 - Set up a Workspace for [RECEIVING](#incoming-signals) Signals
 - [Troubleshoots](#troubleshooting-errors)
-- [Example workspace](#example-workspace)
 
 ---
 
@@ -240,25 +239,4 @@ To receive trading signals into the trading task you need to add a couple of nod
 
 "Fatal Error. Can not run this task. The Network Client Identity does not match any node at User Profiles Plugins."
 This error occurs when the signing account does not match the Governance plugin repository's account. To ensure they are the same, import your user profile on the workspace using the "Add specified User Profile" command under Plugins -> Plugin Project -> Plugin User Profiles. Add the correct nodes, references and signing account to the plugin as detailed in App Setup. Save the plugin and push the changes to the Governance repository and wait 10 minutes for it to merge and be picked up by the Forecast Server.
-
-# Example Workspace
-
-Here's an example workspace for receiving signal that you to try.
-- Before being able to access the signals being sent you need to send a DM to [BlaaSwe](https://github.com/BlaaSwe) on Telegram so that he can add you to the Permissioned P2P Network. 
-- Edit your environment.js file to replace 'P2P Network' and 'Testnet' with the following settings instead
-
-
-```js
-DESKTOP_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
-DESKTOP_TARGET_NETWORK_CODENAME: 'BlaaSignals',
-TASK_SERVER_TARGET_NETWORK_TYPE: 'Permissioned P2P Network',
-TASK_SERVER_TARGET_NETWORK_CODENAME: 'BlaaSignals',
-```
-- Start/Restart Superalgos
-- Update Superalgos
-- Run the trading task
-
-
-**NOTE**: It is only possible to run live trading (paper or real) with the current setup, signal sending might be down at certain times for troubleshoot or interference. 
-
 
