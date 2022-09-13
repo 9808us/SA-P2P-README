@@ -1,5 +1,11 @@
 # SUPERALGOS OUTGOING AND INCOMING SIGNALS
 
+&nbsp;
+
+> # N.B. Please have a look here: https://t.me/superalgosmachinelearning/6499
+> # about a new PR on 09 Sept. 2022 and integrate the following instructions.
+
+&nbsp;
 
 ![image](https://user-images.githubusercontent.com/93773753/184357506-230ef79a-cf45-40f9-a1f8-3b83ace321e1.png)
 
